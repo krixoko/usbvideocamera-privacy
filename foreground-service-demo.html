@@ -1,1 +1,24 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>USB Video Camera – foreground service demo</title><style>body{max-width:760px;margin:48px auto;padding:0 24px;background:#f7f7f2;color:#182c25;font:18px/1.65 system-ui}video{width:100%;max-width:360px;display:block;margin:24px 0;border-radius:12px}a{color:#176b52}</style><h1>USB Video Camera – foreground service demo</h1><p>This video shows the camera service of USB Video Camera (foreground service types: camera, microphone, connected device). The service keeps the USB camera session running while a camera is connected so that a recording continues when the user leaves the app. In the video the built-in test pattern stands in for a USB camera. The user starts a video recording with sound; a persistent notification shows "Recording video" with a Stop action and the microphone indicator is shown. The app is sent to the background and the notification stays; tapping it returns to the app. After the recording is stopped the notification reads "USB camera active" until the user chooses "Disconnect camera", after which the service ends. The saved video appears in the gallery.</p><video controls preload="metadata" src="foreground-service-demo.mp4"></video><p><a href="./">Privacy policy</a></p></html>
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>USB Video Camera – foreground service demo</title>
+<link rel="canonical" href="https://krixoko.github.io/usbvideocamera-privacy/foreground-service-demo.html">
+<style>
+:root{color-scheme:light dark;--bg:#f7f7f2;--fg:#182c25;--muted:#5a6b64;--link:#176b52;--rule:#dcdcd2}
+@media (prefers-color-scheme:dark){:root{--bg:#121613;--fg:#e6ece8;--muted:#9fb0a8;--link:#6fd3ad;--rule:#2a332e}}
+*{box-sizing:border-box}
+body{max-width:760px;margin:0 auto;padding:48px 24px;background:var(--bg);color:var(--fg);font:18px/1.65 system-ui,sans-serif}
+h1{font-size:28px;line-height:1.25;margin:0 0 16px}
+p{margin:0 0 12px}
+video{width:100%;max-width:360px;display:block;margin:24px 0;border-radius:12px;background:#000}
+a{color:var(--link)}
+footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--rule);font-size:16px;color:var(--muted)}
+</style>
+<main>
+<h1>USB Video Camera – foreground service demo</h1>
+<p>This video shows the camera service of USB Video Camera (foreground service types: camera, microphone, connected device). The service keeps the USB camera session running while a camera is connected so that a recording continues when the user leaves the app. In the video the built-in test pattern stands in for a USB camera. The user starts a video recording with sound; a persistent notification shows "Recording video" with a Stop action and the microphone indicator is shown. The app is sent to the background and the notification stays; tapping it returns to the app. After the recording is stopped the notification reads "USB camera active" until the user chooses "Disconnect camera", after which the service ends. The saved video appears in the gallery.</p>
+<video controls playsinline preload="metadata" src="foreground-service-demo.mp4"></video>
+</main>
+<footer><a href="./">Privacy policy</a> · <a href="de.html" hreflang="de">Datenschutzerklärung</a></footer>
+</html>
